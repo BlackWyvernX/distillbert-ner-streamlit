@@ -6,7 +6,7 @@ from transformers import AutoTokenizer, AutoModelForTokenClassification
 # Load the trained model and tokenizer for inference
 @st.cache_resource
 def load_model_and_tokenizer():
-    model_path = "./results/checkpoint-2634/"
+    model_path = "./results/checkpoint/"
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForTokenClassification.from_pretrained(
         model_path,
@@ -167,3 +167,4 @@ if st.button("Analyze", type="primary"):
             st.info("No entities found in the text.")
     else:
         st.warning("Please enter some text to analyze.")
+
