@@ -20,7 +20,7 @@ streamlit run app.py
 ```
 
 Notes
-- The app expects a trained checkpoint under `./results/checkpoint-2634/` (config.json, model.safetensors, tokenizer files, etc.).
+- The app expects a trained checkpoint under `./results/checkpoint/` (config.json, model.safetensors, tokenizer files, etc.) which can be found at https://drive.google.com/drive/folders/1ILt4F3R9Y9z4nu_GlTg-V1k6ENqiNWc2?usp=sharing.
 - If you’re cloning this repo fresh, place your fine-tuned model in that folder or update `model_path` in `app.py`.
 
 ## Training (optional)
@@ -60,4 +60,5 @@ docs/
   - https://github.com/huggingface/safetensors
 
 ## License
+
 MIT
