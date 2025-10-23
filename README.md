@@ -1,10 +1,10 @@
 # DistilBERT NER App
 
-A tiny Named Entity Recognition (NER) demo that fine-tunes DistilBERT on CoNLL-2003 and serves an interactive UI with Streamlit. Entities are rendered with a simple displaCy-style highlight.
+A tiny Named Entity Recognition (NER) workflow that fine-tunes DistilBERT on CoNLL-2003 and serves an interactive UI with Streamlit. Entities are rendered with a simple displaCy-style highlight.
 
 ## What’s inside
 - Training notebook: `main.ipynb` (loads CoNLL-2003, tokenizes, trains with Hugging Face Trainer)
-- Inference app: `app.py` (Streamlit UI + model loader from `./results/checkpoint-2634/`)
+- Inference app: `app.py` (Streamlit UI + model loader from `./results/checkpoint/`)
 - Checkpoints (local): `./results/checkpoint-*/`
 
 ## Quickstart
@@ -37,7 +37,7 @@ Adjust training arguments (batch size, epochs, fp16, etc.) as you like.
 app.py
 main.ipynb
 results/
-  checkpoint-XXXX/
+  checkpoint/
 static/
 docs/
 ```
@@ -62,3 +62,4 @@ docs/
 ## License
 
 MIT
+
