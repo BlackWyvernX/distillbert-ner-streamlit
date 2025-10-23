@@ -5,7 +5,7 @@ A tiny Named Entity Recognition (NER) workflow that fine-tunes DistilBERT on CoN
 ## What’s inside
 - Training notebook: `main.ipynb` (loads CoNLL-2003, tokenizes, trains with Hugging Face Trainer)
 - Inference app: `app.py` (Streamlit UI + model loader from `./results/checkpoint/`)
-- Checkpoints (local): `./results/checkpoint-*/`
+- Checkpoints (local): `./results/checkpoint/`
 
 ## Quickstart
 1) Create and activate a virtual environment (recommended)
@@ -62,4 +62,5 @@ docs/
 ## License
 
 MIT
+
 
